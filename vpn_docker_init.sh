@@ -4,7 +4,7 @@
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install docker.io
 
-#container based vpn once can start an ope vpn on a aws ec2 insatnce will one script .@credits https://github.com/kylemanna/docker-openvpn looks there more details
+#container based vpn once can start an ope vpn on a aws ec2 insatnce will one script .@credits https://github.com/kylemanna/docker-openvpn look there more details
 OVPN_DATA="ovpn-data"
 sudo docker volume create --name $OVPN_DATA
 sudo docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://$(ec2metadata --public-hostname)
