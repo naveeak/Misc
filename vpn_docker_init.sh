@@ -1,8 +1,8 @@
 #!/bin/bash
   
 #prerequistcs
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install docker.io
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install -y docker.io
 
 #container based vpn once can start an ope vpn on a aws ec2 insatnce will one script .@credits https://github.com/kylemanna/docker-openvpn look there more details
 #this uses a docker to run the vpn server .once image create we can create a .ovpn config file for direct connection .For Android ,use the openvpn app and connect to the vpn server 
